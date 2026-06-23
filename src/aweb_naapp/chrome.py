@@ -229,7 +229,7 @@ def render_footer(site: SiteConfig) -> str:
     )
     oss = (
         f'\n          <p class="footer-oss">Open source, MIT-licensed. '
-        f'<a href="{escape(site.source_url, quote=True)}">View on GitHub &rarr;</a></p>'
+        f'<a href="{escape(site.source_url, quote=True)}" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>'
         if site.source_url
         else ""
     )
